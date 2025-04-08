@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="snow.css" type="text/css" />
+    <title>P jak problem</title>
+</head>
+<body>
+    <a>wi wi wi</a> <br>
+    <input type="text" id="pole"/>
+    <input type="submit" value="Sprawdź" onclick="Kalkuluj()"/>
+    <script>
+    function Kalkuluj()
+    {
+        var liczba = parseInt(document.getElementById("pole").value);
+
+        if (isNaN(liczba))
+        {
+            document.write("nope");
+        }
+        else
+        {
+            
+            x=Math.round(liczba*100/100); document.write("zaokroąglona - "+x+"<br>");
+
+            y=Math.floor(liczba*100/100); document.write("floor - "+y+"<br>");
+
+            z=Math.ceil(liczba*100/100); document.write("ceilling - "+z+"<br>");
+        }
+    }
+    </script>
+</body>
+</html>
