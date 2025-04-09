@@ -12,9 +12,9 @@
     <script>
     function Kalkuluj()
     {
-        var liczba = parseInt(document.getElementById("pole").value);
+        var liczba = document.getElementById("pole").value;
 
-        if (isNaN(liczba))
+        if (parseFloat(liczba) === parseInt(liczba))
     {
         document.write("nope, tell as more about because i have no idea what are you talking about... thanks")
     }
@@ -30,4 +30,3 @@
     }
     </script>
 </body>
-</html>
